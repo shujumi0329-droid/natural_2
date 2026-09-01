@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>RV-2717 Disaster Reconstruction Archive</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-condition="natural">
+<div class="shell">
+  <header class="masthead">
+    <div class="identity">
+      <div class="sup">Disaster Reconstruction Archive</div>
+      <div class="title">Rime Valley · Case RV-2717</div>
+    </div>
+    <div class="review-progress" aria-label="Review progress">
+      <div class="progress-meta"><span>File review</span><strong id="progressText">01 / 05</strong></div>
+      <div class="progress-track">
+        <span data-progress="overview" class="active"></span>
+        <span data-progress="reconstruction"></span>
+        <span data-progress="analysis"></span>
+        <span data-progress="aftermath"></span>
+        <span data-progress="finding"></span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="sheet hero-section dossier-section" id="overview" data-step="1" data-track>
+      <div class="hero">
+        <div class="hero-copy">
+          <div class="case-line">Case RV-2717 · Final reconstruction</div>
+          <h1 class="fatalities"><b id="fatalities"></b><span>recorded fatalities</span></h1>
+          <div class="condition" id="conditionLabel"></div>
+
+          <div class="attribution">
+            <div class="attribution-head"><strong>Cause attribution</strong><span>Final investigation weighting</span></div>
+            <div class="weight-row"><div>Natural cause</div><div class="bar"><span id="naturalBar"></span></div><div class="weight-num" id="naturalNum"></div></div>
+            <div class="weight-row"><div>Human cause</div><div class="bar"><span id="humanBar"></span></div><div class="weight-num" id="humanNum"></div></div>
+          </div>
+
+          <p class="cause-sentence" id="headline"></p>
+          <p class="summary" id="summary"></p>
+          <a class="continue-link" href="#reconstruction">Continue to event reconstruction <span>↓</span></a>
+        </div>
+        <div class="hero-media">
+          <img id="heroImage" alt="initiating source-area record">
+          <div class="hero-label"><strong id="heroRecordLabel"></strong><span id="cause"></span></div>
+        </div>
+      </div>
+
+      <div class="section facts-section">
+        <div class="section-head">
+          <div class="section-kicker">Incident record</div>
+          <div><h2>Event facts</h2><p>Archived measurements and population records from the affected valley.</p></div>
+        </div>
+        <div class="facts" id="facts"></div>
+      </div>
+    </section>
+
+    <section class="sheet dossier-section" id="reconstruction" data-step="2" data-track>
+      <div class="section">
+        <div class="section-head">
+          <div class="section-kicker">Reconstruction 01</div>
+          <div><h2>Valley change record</h2><p>Two archived views show the same valley before the event and after the debris flow.</p></div>
+        </div>
+        <div class="compare-layout">
+          <div class="compare-frame" id="compareFrame">
+            <img id="compareImage" src="assets/common/before.png" alt="valley before event">
+            <div class="image-stamp"><span id="compareStamp">BEFORE EVENT</span></div>
+          </div>
+          <aside class="compare-controls">
+            <div class="smallcap">Archive view</div>
+            <div class="compare-buttons" role="group" aria-label="Before and after image selection">
+              <button class="compare-btn active" data-view="before">Before</button>
+              <button class="compare-btn" data-view="after">After</button>
+            </div>
+            <p id="compareCaption">Archived view recorded before the upper-slope failure.</p>
+          </aside>
+        </div>
+      </div>
+
+      <div class="section sequence-section">
+        <div class="section-head">
+          <div class="section-kicker">Reconstruction 02</div>
+          <div><h2>Event sequence</h2><p>The reconstruction follows the initiating site, full source-area failure, aerial aftermath, and ground-level deposit.</p></div>
+        </div>
+        <div class="sequence-story">
+          <div class="sequence-visual">
+            <div class="sequence-frame"><img id="stageImg" alt="event sequence image"><div class="image-stamp"><span id="stageStamp"></span></div></div>
+            <div class="sequence-caption"><div class="smallcap" id="stageLabel"></div><h3 id="stageTitle"></h3><p id="stageText"></p></div>
+          </div>
+          <div class="sequence-steps" id="sequenceSteps"></div>
+        </div>
+        <a class="continue-link" href="#analysis">Continue to event analysis <span>↓</span></a>
+      </div>
+    </section>
+
+    <section class="sheet dossier-section" id="analysis" data-step="3" data-track>
+      <div class="section">
+        <div class="section-head">
+          <div class="section-kicker">Technical analysis</div>
+          <div><h2>Event-path analysis</h2><p>The post-event reconstruction identifies the source zone, transfer corridor, debris-flow transition, and principal impact area.</p></div>
+        </div>
+        <div class="analysis-layout">
+          <div class="analysis-image"><img src="assets/common/analyze.png" alt="annotated event analysis"><div id="pins"></div></div>
+          <aside class="analysis-text">
+            <div class="smallcap">Selected analysis point</div>
+            <h3 id="analysisTitle"></h3><p id="analysisText"></p>
+            <div class="analysis-metrics">
+              <div><span>Collapsed rock and ice</span><strong>≈27.0 million m³</strong></div>
+              <div><span>Downstream population</span><strong>30,084</strong></div>
+              <div><span>Recorded fatalities</span><strong>22,184</strong></div>
+            </div>
+          </aside>
+        </div>
+      </div>
+
+      <div class="section evidence-section" data-track id="evidenceTrack">
+        <div class="section-head evidence-head">
+          <div class="section-kicker">Investigation records</div>
+          <div><h2>Supporting evidence</h2><p>Detailed records remain folded until opened. They are not required to read the event summary.</p></div>
+        </div>
+        <div class="accordion" id="accordion"></div>
+      </div>
+      <div class="section section-tail"><a class="continue-link" href="#aftermath">Continue to aftermath record <span>↓</span></a></div>
+    </section>
+
+    <section class="sheet dossier-section" id="aftermath" data-step="4" data-track>
+      <div class="section">
+        <div class="section-head">
+          <div class="section-kicker">Post-event record</div>
+          <div><h2>Aftermath documentation</h2><p>The archive records the lower valley first from the air and then from ground level.</p></div>
+        </div>
+        <div class="aftermath-grid">
+          <article class="photo-card"><button class="photo-open" data-image="assets/common/after_air.png" data-title="Lower-valley aerial survey"><img src="assets/common/after_air.png" alt="post-event aerial survey"></button><div class="photo-copy"><div class="smallcap">Aerial survey</div><h3>Lower-valley impact zone</h3><p>The completed debris corridor and main deposition area after the flow reached the settlement.</p></div></article>
+          <article class="photo-card secondary"><button class="photo-open" data-image="assets/common/after_close.png" data-title="Ground-level debris deposit"><img src="assets/common/after_close.png" alt="post-event ground-level field record"></button><div class="photo-copy"><div class="smallcap">Ground record</div><h3>Debris deposit</h3><p>Coarse sediment, transported blocks, and buried surface structures within the affected area.</p></div></article>
+        </div>
+        <a class="continue-link" href="#finding">Continue to final determination <span>↓</span></a>
+      </div>
+    </section>
+
+    <section class="sheet dossier-section" id="finding" data-step="5" data-track>
+      <div class="section">
+        <div class="section-head">
+          <div class="section-kicker">Final determination</div>
+          <div><h2>Investigation conclusion</h2><p>Final classification of the initiating cause and documented consequences.</p></div>
+        </div>
+        <div class="finding">
+          <div class="finding-box"><div class="smallcap">Cause classification</div><h2 id="finalTitle"></h2><p id="finalText"></p></div>
+          <aside class="finding-side">
+            <div class="finding-row"><span>Natural cause weighting</span><strong id="finalNat"></strong></div>
+            <div class="finding-row"><span>Human cause weighting</span><strong id="finalHum"></strong></div>
+            <div class="finding-row"><span>Recorded fatalities</span><strong id="finalFatalities"></strong></div>
+            <div class="finding-row"><span>Collapsed rock and ice</span><strong id="finalVolume"></strong></div>
+          </aside>
+        </div>
+        <div class="review-complete"><span>FILE REVIEW COMPLETE</span><strong>Rime Valley Disaster Reconstruction Archive · Case RV-2717</strong></div>
+      </div>
+    </section>
+  </main>
+</div>
+
+<div class="modal" id="modal"><div class="modal-card"><div class="modal-head"><strong id="modalTitle"></strong><button class="modal-close" id="modalClose">×</button></div><img id="modalImg" alt="expanded evidence image"></div></div>
+<script src="script.js"></script>
+</body>
+</html>
